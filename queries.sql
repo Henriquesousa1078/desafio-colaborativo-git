@@ -12,7 +12,8 @@ alter table veiculos add cor text;
 CREATE TABLE clientes (
   id_cliente integer primary key,
   nome_cliente text,
-  telefone bigint
+  telefone bigint,
+  cpf bigint
 );
 
 CREATE table vendedores (
