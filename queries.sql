@@ -48,9 +48,9 @@ insert into clientes values (1,"Carlos Silva", 6198888777777),
 (2,"Ana Souza", 61999996666666),
 (3, "João Pereira", 6188888855555555);
 
-update clientes set cpf = 09188669289 where id_cliente = 1;
-update clientes set cpf = 19611243278 where id_cliente = 2;
-update clientes set cpf = 48321285406 where id_cliente = 3;
+-- update clientes set cpf = 09188669289 where id_cliente = 1;
+-- update clientes set cpf = 19611243278 where id_cliente = 2;
+-- update clientes set cpf = 48321285406 where id_cliente = 3;
 
 update clientes set telefone = 61777774444 where id_cliente = 3;
 
@@ -71,8 +71,10 @@ select data_venda,
 valor_final, 
 nome_vendedor as vendedor,
 nome_cliente as cliente,
+cpf as cpf_cliente,
 modelo_veiculo as modelo,
-marca_veiculo as marca
+cor as cor_veiculo,
+ano_veiculo
 from vendas
 inner join vendedores on vendedor_id = vendedores.id_vendedor
 inner join clientes  on cliente_id = clientes.id_cliente
