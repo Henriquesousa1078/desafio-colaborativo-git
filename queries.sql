@@ -12,9 +12,9 @@ alter table veiculos add cor text;
 CREATE TABLE clientes (
   id_cliente integer primary key,
   nome_cliente text,
-  telefone bigint
+  telefone bigint,
+  cpf bigint
 );
-alter table clientes add cpf bigint;
 
 CREATE table vendedores (
   id_vendedor integer primary key,
@@ -44,13 +44,9 @@ insert into veiculos values (1,"Corola", "Toyota", 2022, 95000, "Preto"),
 
 -- inserção dos atributos na tabela clientes 
 
-insert into clientes values (1,"Carlos Silva", 6198888777777),
-(2,"Ana Souza", 61999996666666),
-(3, "João Pereira", 6188888855555555);
-
--- update clientes set cpf = 09188669289 where id_cliente = 1;
--- update clientes set cpf = 19611243278 where id_cliente = 2;
--- update clientes set cpf = 48321285406 where id_cliente = 3;
+insert into clientes values (1,"Carlos Silva", 6198888777777, 05504901125),
+(2,"Ana Souza", 61999996666666, 88895579925),
+(3, "João Pereira", 6188888855555555, 22133633925);
 
 update clientes set telefone = 61777774444 where id_cliente = 3;
 
