@@ -4,6 +4,7 @@ Bem-vindos!
 Este trabalho foi desenvolvido com o objetivo de proporcionar familiaridade com os comandos fundamentais do Git e com o processo de versionamento de código utilizando o GitHub.
 
 Docente: Bruno Eduardo
+
 Membros
 
 Diego Borges Rodrigues
@@ -13,7 +14,6 @@ João Batista Gomes de Matos
 João Rafael do Carmo Santos
 
 Henrique de Sousa Santos
-
 
 Sobre o Trabalho
 
